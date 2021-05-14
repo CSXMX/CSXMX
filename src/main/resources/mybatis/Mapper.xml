@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pro.Mapper.UserMapper">
+    <select id="getUser" resultType="pro.Entity.User">
+        <!--        SELECT * FROM employee WHERE id=#{id}-->
+        SELECT * FROM student where id='1';
+    </select>
+    <select id="getUser1" resultType="pro.Entity.User">
+        <!--        SELECT * FROM employee WHERE id=#{id}-->
+        SELECT * FROM student;
+    </select>
+
+    <!--    <insert id="insertEmp">-->
+    <!--        INSERT INTO employee(lastName,email,gender,d_id) VALUES (#{lastName},#{email},#{gender},#{dID})-->
+    <!--    </insert>-->
+</mapper>
