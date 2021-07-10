@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    <p>
+        id <input type="text" name = "id">
+    </p>
+    <p>
+        title  <input type="text" name = "title">
+    </p>
+     <p>
+        price  <input type="text" name = "price">
+    </p>
+     <p>
+        publish  <input type="text" name = "publish">
+    </p>
+    <p><button type="submit" name = "add">提 交</button></p>
+    <p><button type="submit" name = "delete">根据ID删除</button></p>
+    <p><button type="submit" name = "AddorUpdate">更新或添加</button></p>
+
+</form>
+</body>
+</html>

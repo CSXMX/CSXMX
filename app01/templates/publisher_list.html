@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="10" class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>publish</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for i in list %}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.price}}</td>
+        <td>{{i.publish}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
